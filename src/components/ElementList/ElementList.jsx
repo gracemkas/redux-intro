@@ -5,7 +5,7 @@ class ElementList extends Component {
     
   render() {
     let elementListItemArray = this.props.elementList.map ((item, index) => {
-        return <li key={index}> {item} </li>
+        return <li key={index}>Name: {item.name} Atomic Number: {item.atomicNumber} </li>
       })
     return (
         <div>
